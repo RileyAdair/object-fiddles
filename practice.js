@@ -8,7 +8,7 @@ var me = {
   name: 'Riley',
   age: 28
 };
-
+alert(me.name);
 
 
 
@@ -26,7 +26,7 @@ var favoriteThings = {
   person: 'You',
   book: 'Outliers',
   movie: 'Snatch',
-  holiday: 'Merica Day'
+  holiday: 'National Donut Day'
 };
 
 
@@ -37,8 +37,8 @@ var favoriteThings = {
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Code here
-favoriteThings.car = 'bmw';
-favoriteThings.brand = 'nike';
+favoriteThings.car = '335';
+favoriteThings.brand = 'BMW';
 
 
 
@@ -78,7 +78,7 @@ backPack[item] = 'chapstick';
 //After you do the above, alert your entire backPack object.
 
   //Code here
-// alert(backPack);
+//alert(JSON.stringify(backPack));
 
 
 /*
@@ -192,10 +192,9 @@ function makePerson(name, birthday, ssn){
 
   //Code Here
 function makeCard(cardNumber, expirationDate, securityCode){
-  var obj = {};
-  obj.cardNumber = cardNumber;
-  obj.expirationDate = expirationDate;
-  obj.securityCode = securityCode;
-
-  return obj;
+  return {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
 }
